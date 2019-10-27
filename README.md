@@ -28,7 +28,11 @@ You should now have all the plugin files under
 
 # Config Defaults
 
-    enabled: true
+| Variable | Default | Options | Note |
+|----------|---------|-------------------------------------------------|------------------------------------------------------------------------------|
+| enabled | true | `true` or `false` | Enables or disables the plugin. |
+| fontawesome_icons | true | `true` or `false` | Switch between FontAwesome icons or SVG images |
+| fontawesome_css | true | `true` or `false` | Disable if your theme already has FontAwesome support, probably you don't want to duplicate CSS files. |
 
 If you need to change any value, then the best process is to copy the [backtotop.yaml](backtotop.yaml) file into your `users/config/plugins/` folder (create it if it doesn't exist), and then modify there. This will override the default settings.
 
