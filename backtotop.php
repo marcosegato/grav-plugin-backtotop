@@ -57,10 +57,15 @@ class BacktotopPlugin extends Plugin
     public function onTwigSiteVariables()
     {
         $twig   = $this->grav['twig'];
-        $config = $this->config->toArray();
+        $config = $this->config->get('plugins.backtotop');
 
-        $this->grav['assets']->addCss("plugin://backtotop/assets/return-to-top.css");
-        $this->grav['assets']->addJs("plugin://backtotop/assets/return-to-top.js", ['group' => 'bottom']);
+        $this->grav['assets']->addCss("plugin://backtotop/assets/css/return-to-top.css");
+
+        if($config['fontawesome_icons'] && $config['fontawesome_css']) {
+            $this->grav['assets']->addCss('plugin://backtotop/assets/css/font-awesome-4.7.0.min.css', 99);
+        }
+
+        $this->grav['assets']->addJs("plugin://backtotop/assets/js/return-to-top.js", ['group' => 'bottom']);
     }
 
 }
