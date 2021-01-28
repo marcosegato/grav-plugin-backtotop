@@ -1,5 +1,5 @@
 name: Back to Top
-version: 0.6.0
+version: 0.6.1
 description: This grav plugin displays a "Back to Top" link at the end of every section, so the reader can jump back up to the table of contents. The plugin integrates the js lib "Return to Top Arrow" by [rdallaire](https://codepen.io/rdallaire/pen/apoyx).
 icon: chevron-circle-up
 author:
