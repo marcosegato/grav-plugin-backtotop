@@ -1,7 +1,13 @@
+# v0.6.3
+##  12/08/2022
+
+1. [](#improved)
+    * Accessibility improved with title attribute [#8](https://github.com/marcosegato/grav-plugin-backtotop/issues/8), thanks to [@awrog](https://github.com/awrog)!
+
 # v0.6.2
 ##  12/04/2022
 
-1. [](#bugfix)
+1. [](#improved)
     * Feature made accessible to screen readers [#7](https://github.com/marcosegato/grav-plugin-backtotop/issues/7), thanks to [@zamentur](https://github.com/zamentur)!
 
 # v0.6.1
