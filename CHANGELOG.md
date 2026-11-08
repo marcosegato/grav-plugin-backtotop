@@ -1,3 +1,9 @@
+# v0.7.0
+##  08/11/2026
+
+1. [](#improved)
+    * Remove the jQuery dependency and use vanilla JavaScript [#10](https://github.com/marcosegato/grav-plugin-backtotop/issues/10), thanks to [@diomed](https://github.com/diomed)!
+
 # v0.6.3
 ##  12/08/2022
 

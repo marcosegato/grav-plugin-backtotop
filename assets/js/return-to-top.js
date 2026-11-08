@@ -1,13 +1,22 @@
 // ===== Scroll to Top ====
-$(window).scroll(function () {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
+const returnToTop = document.getElementById('return-to-top');
+window.addEventListener('scroll', () => {
+	if (window.scrollY >= 50) {
+    	returnToTop.style.display = 'block';
+    	returnToTop.style.opacity = '1';
+	} else {
+    	returnToTop.style.opacity = '0';
+    	setTimeout(() => {
+        	if (window.scrollY < 50) {
+            	returnToTop.style.display = 'none';
+        	}
+    	}, 200);
+	}
 });
-$('#return-to-top').click(function () {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop: 0                       // Scroll to top of body
-    }, 500);
+returnToTop.addEventListener('click', (e) => {
+	e.preventDefault();
+	window.scrollTo({
+    	top: 0,
+    	behavior: 'smooth'
+	});
 });
