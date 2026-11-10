@@ -1,3 +1,9 @@
+# v1.0.0
+##  10/11/2026
+
+1. [](#improved)
+    * Plugin compatible with Grav 2.0
+
 # v0.7.0
 ##  08/11/2026
 
